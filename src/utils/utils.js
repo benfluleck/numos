@@ -8,9 +8,7 @@ function calculatePension(initialDeposit, monthlyContribution, riskLevel, time) 
 
   const annualInterestRate = riskLevels[riskLevel.toLowerCase()];
 
-
   return (initialDeposit + monthlyContribution) * Math.pow(1+ annualInterestRate/12, 12 * time)
-
 }
 
 
