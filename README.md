@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Numos
+
+
+
+# Table of Contents
+
+- [Getting Started](#getting-started)
+- [Technology Stack](#technology-stack)
+- [Installation](#installation)
+- [Testing](#testing)
+- [Questions](#questions)
+- [Support or Contribution](#support-or-contribution)
+- [Status](#status)
 
 ## Getting Started
+This is a clientside javascript application built [Next JS](https://nextjs.org/) application.
 
-First, run the development server:
+Pension Plan Configuraton             |  Educational Interactive Chart
+:-------------------------:|:-------------------------:
+<img width="500" alt="Pension plan" src="./screenshot/img1.png">  |  <img width="500" alt="Educational Interactive Chart" src="./screenshot/img2.png">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+
+## Technology Stack
+
+**Client Side**
+1. Next.Js
+2. Netlify
+
+
+## Installation
+
+1. Install [**Node JS**](https://nodejs.org/en/).
+
+2. Clone the [**repository here**](git@github.com:benfluleck/numos.git)
+3. [**cd**] into the root of the **project directory**.
+4. Run `pnpm install` on the terminal to install project dependecies
+
+5. Start the application:
+
+**_Build Environments_**
+
+### For Client
+**Development**
 ```
+pnpm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Webpack should open your default browser automatically
+```
+- Navigate to `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### CI/CD
+The project uses a combination of Github Actions and Netlify. Each PR is tested and deployed on [here]
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Testing
 
-## Learn More
+Client side tests - Run `npm run test` on the terminal while within the **project root directory**.
 
-To learn more about Next.js, take a look at the following resources:
+Client side testing is achieved through the use of `jest` package. `jest` is used to test javascript code in
+React applications.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Client side testing is yet to be configured but is being worked on currently
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Questions
+For more details contact benfluleck@gmail.com
 
-## Deploy on Vercel
+## Support or Contribution
+For any suggestions or contributions or issues please do raise them or email me.
+For **Contributiions**, Please clone the repo and implement a PR I would appreciate it
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Status
+Still undergoing testing
