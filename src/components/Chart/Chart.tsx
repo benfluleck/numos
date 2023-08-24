@@ -1,15 +1,9 @@
 'use client'
 import { FC } from 'react';
-
 import { LineChart, Line, Label, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
-interface ChartProps {
-  xLabel: string;
-  yLabel: string;
-  xKey: string;
-  yKey: string;
-  data: Record<string, unknown>[]
-}
+import { ChartProps } from '@entities/Form'
+
 
 const Chart:FC<ChartProps> = ({ data = [], xLabel, xKey, yLabel, yKey }) => (
 

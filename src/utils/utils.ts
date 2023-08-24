@@ -1,4 +1,6 @@
-function calculatePension(initialDeposit, monthlyContribution, riskLevel, time) {
+import { Risk } from "@entities/Form";
+
+function calculatePension(initialDeposit: number, monthlyContribution: number, riskLevel: Risk, time: number) {
 
   const riskLevels = {
     conservative: 0.02,
@@ -6,13 +8,14 @@ function calculatePension(initialDeposit, monthlyContribution, riskLevel, time) 
     aggressive: 0.06,
   };
 
+  // @ts-ignore
   const annualInterestRate = riskLevels[riskLevel.toLowerCase()];
 
   return (initialDeposit + monthlyContribution) * Math.pow(1+ annualInterestRate/12, 12 * time)
 }
 
 
-export const createPensionElements = (initialDeposit, monthlyContribution, riskLevel, retirementAge, age) => {
+export const createPensionElements = (initialDeposit: number, monthlyContribution: number, riskLevel: Risk, retirementAge: number, age: number) => {
   let pensionAmounts = []
 
   const timeSpentSaving = retirementAge - age;
