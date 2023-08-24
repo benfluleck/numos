@@ -1,14 +1,5 @@
 import { FC } from 'react'
-
-interface SelectProps {
-  title: string;
-  name: string;
-  labelTitle?: string;
-  options?: string[];
-  error? : string;
-  value? : string;
-  onChange?:(e: React.ChangeEvent<HTMLSelectElement>) => void
-}
+import { SelectProps } from "@entities/Form"
 
 
 const Select:FC<SelectProps> = ({ title, name, error, labelTitle, value, onChange, options = [] }) => (

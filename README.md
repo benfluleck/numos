@@ -50,11 +50,11 @@ Webpack should open your default browser automatically
 - Navigate to `http://localhost:3000`
 
 ### CI/CD
-The project uses a combination of Github Actions and Netlify. Each PR is tested and deployed on [here]
+The project uses a combination of Github Actions and Netlify. Each PR is tested and deployed on [here](https://lovely-longma-fb00bd.netlify.app/)
 
 ## Testing
 
-Client side tests - Run `npm run test` on the terminal while within the **project root directory**.
+Client side tests - Run `pnpm run test` on the terminal while within the **project root directory**.
 
 Client side testing is achieved through the use of `jest` package. `jest` is used to test javascript code in
 React applications.

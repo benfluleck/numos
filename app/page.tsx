@@ -1,30 +1,14 @@
 'use client'
 
-import { useState, FormEvent } from 'react'
 import { useFormik } from 'formik'
 import { useRouter } from "next/navigation";
 import Input from '@components/Input/Input'
 import Select from '@components/Select/Select'
 
+import { Risk, ErrorState, UseFormState } from '@entities/Form'
+
 const options = ["conservative", "moderate", "aggressive"]
 
-
-
-type Risk = "conservative" | "moderate" | "aggressive" | "";
-
-interface UseFormState {
-  initialDeposit: string;
-  monthlyContribution: string;
-  retiredAge: string;
-  currentAge: string;
-  riskLevel: Risk;
-}
-
-interface ErrorState {
-  retiredAge: string;
-  currentAge: string;
-  riskLevel: string;
-}
 
 
 const formData = {
